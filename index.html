@@ -1,116 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style2.css"> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>S. Suriya — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>WELCOME TO MY PORTFOLIO</header>
-   <main>
-    <div id="menu">
-        <img id="previewImg" src="src/Suriya-22.jpeg" alt="">
-        <nav id="nav">
-            <ul id="list">
-                <li><a href="#QUALIFICATION">QUALIFICATION</a></li>
-                <li><a href="#EXPERIENCE">EXPERIENCE</a></li>
-                <li><a href="#SKILLS">SKILLS</a></li>
-                <li><a href="#PROJECTS">PROJECTS</a></li>
-                <li><a href="#CONTACT">CONTACT</a></li>
-                <li><a id="homebtn" href="#HOME">HOME</a></li>
-            </ul>
-        </nav>
-    </div> 
+  <div class="wrap">
 
-<div id="imageview" role="dialog" aria-modal="true">
-    <span id="close" aria-label="Close image preview">&times;</span>
-    <img id="modalImg" src="src/Suriya-22.jpeg" alt="Image preview">
-</div>
-
-    <div id="det">
-        <div id="profile">
-            <h2>SURIYA SUBRAMANIYAN S</h2>
-            <h1></h1>
-            <h3>Frontend Web Developer | Programmer | UI/UX  Designer</h3>
-            <p>Beginner Frontend Developer skilled in HTML, CSS, JavaScript, and React, focused on creating clean, 
-            responsive, and user-friendly interfaces while continuously learning new technologies.Dedicated, fast learner, and not active on social media—giving me more time to focus on  improving my skills,
-            building projects, and listening to music as my only hobby
-</p>
-
-
-<button type="button" id="btn1">About me</button>
-            
+   
+    <header class="site-header fade-up">
+      <div class="brand">
+        <div class="avatar">
+          <img alt="S. Suriya" src="src/Suriya-22.jpeg" loading="lazy"/>
         </div>
-        <div id="homepage">
-                <br><br><br><br><br>
-            <H1>WECOME TO MY PORTFOLIO</H1>
-            <br><br><br>
-            <h3>NAME : S.SURIYA MSc</h3> <br><br><br>
-            <h3>DATE OF BIRTH : 26/05/2000</h3> <br><br>
-            <h3>NATIVE : THIRUVARUR (Willing to Relocate Immediately )</h3><br><br>
-            <h3>ROLE : JUNIOR DEVELOPER</h3>
+        <div>
+          <h1>S. Suriya</h1>
+          <p>Frontend Web Developer — UI/UX</p>
+        </div>
+      </div>
 
+      <nav class="top-nav" aria-label="Primary">
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div id="QUALIFICATION">
-                                <ul id="quali">
-                                    <li>Master's at Mathematics in TBML College , porayar (Annamalai university) with 72% (GPA) </li> <br> <br>
-                                    <li>Bachelor's at Mathematics in TBML College , porayar (Bharathidhasan university) with 74% (GPA)</li> <br> <br>
-                                    <li>HSC at Bio - Maths in Brindhavan Hr sec school , Pattukkottai (State board) with 86%</li> <br> <br>
-                                    <li>SSLC in Govt High school , Manali (State Board) with 92%</li>
-                                </ul>
+      </nav>
+    </header>
 
+    
+    <main class="grid">
+
+      
+      <aside class="sidebar fade-up" aria-labelledby="profile-heading">
+        <div class="avatar-lg">
+          <img src="src/Suriya-22.jpeg" alt="Portrait of Suriya" loading="lazy">
         </div>
-        <div id="EXPERIENCE" class="section">
-            <ul id="exp">
-                <li>Customer Service Representative at SUB-K Impact Solutions on Thiruvarur Branch <br> <a href="">(1 Year 2 Months)</a> </li> <br> <br>
-                <li>Receptionist cum Cashier at Geetan Residency and Mahal on Thirunallar <br>(3 years - Part time)</li>
-            </ul>
+
+        <div class="name">S. Suriya</div>
+        <div class="role">Frontend Web Developer | UI/UX Designer</div>
+
+        <div class="contact">
+          <a href="mailto:sivasuriya2605@gmail.com">
+            ✉️ Email <span style="margin-left:auto;font-weight:600">sivasuriya2605@mail.com</span>
+          </a>
+
+          <a href="tel:+918610960440">
+            📞 Phone <span style="margin-left:auto;font-weight:600">+91 86109 60440</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sivasuriya2605/" target="_blank">
+            🔗 LinkedIn <span style="margin-left:auto;font-weight:600">sivasuriya2605</span>
+          </a>
         </div>
-        <div id="SKILLS" class="section">
-            <ul> <br> <br> <br> <br>
-                <li>Project Management</li> <br>
-                <li>Time management</li> <br>
-                <li>Problem solving</li> <br>
-            </ul>
-            <br> <br>
-            <div id="imageset">
-                <img src="src/html.png" alt="html logo">
-                <img src="src/css.png" alt="css logo">
-                <img src="src/js.png" alt="js logo">
-                <img src="src/react.png" alt="react logo">
+
+        <a class="cv-btn" href="src/suriya Resume (2).pdf" target="_blank">Download Resume</a>
+
+        <div style="margin-top:auto;font-size:0.85rem;color:var(--muted);text-align:center;padding-top:12px">
+          Based in Thiruvarur — willing to relocate
+        </div>
+      </aside>
+
+      
+      <section class="content">
+
+        
+        <div class="hero fade-up">
+          <div class="intro">
+            <h2>Hello — I build clean & accessible frontends</h2>
+            <p class="lead">
+              I’m a beginner-friendly frontend developer focused on building responsive, accessible and easy-to-use
+              interfaces using HTML, CSS, JavaScript and React.
+            </p>
+
+            <div class="cta">
+              <a class="btn primary" href="#projects">View projects</a>
+              <button class="btn" id="contactBtn">Contact me</button>
             </div>
-        </div>
-        <div id="PROJECTS" class="section">
-            
-        <div class="container">
-        <div class="header-bar">
-            <h1 class="project" id="project1" data-topic="topic1">AMAZON</h1>
-            <h1 class="project" id="project2" data-topic="topic2">LOGIN FORM</h1>
-            <h1 class="project" id="project3" data-topic="topic3">WEATHER</h1>
+
+            <div class="badge-list">
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">CSS</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">React</span>
+            </div>
+          </div>
         </div>
 
-        <div class="image-div" >
-            <a href="https://sivasuriya2605.github.io/amazonsite/" target="_blank"><img src="src/project1.jpg" alt=""></a>
-            <a href="https://sivasuriya2605.github.io/loginform/" target="_blank"><img src="src/project2.jpg" alt=""></a>
-            <a href="https://sivasuriya2605.github.io/weather/" target="_blank"><img src="src/project3.jpg" alt=""></a>
-        </div>
-    </div>
+        
+        <div id="projects" class="fade-up">
+          <h3 style="margin-top:18px">Projects</h3>
 
-            
+          <div class="projects">
+
+            <article class="project-card" tabindex="0">
+              <img src="src/project1.jpg" alt="Amazon clone screenshot" loading="lazy">
+              <div class="project-title">Amazon Clone</div>
+              <div class="project-meta">HTML • CSS • JS</div>
+              <div class="project-links">
+                <a href="https://sivasuriya2605.github.io/amazonsite/" target="_blank">Live</a>
+                <a href="https://github.com/sivasuriya2605/amazonsite" target="_blank">Code</a>
+              </div>
+            </article>
+
+            <article class="project-card" tabindex="0">
+              <img src="src/project2.jpg" alt="Login form screenshot" loading="lazy">
+              <div class="project-title">Login Form</div>
+              <div class="project-meta">HTML • CSS • JS</div>
+              <div class="project-links">
+                <a href="https://sivasuriya2605.github.io/loginform/" target="_blank">Live</a>
+                <a href="https://github.com/sivasuriya2605/loginform" target="_blank">Code</a>
+              </div>
+            </article>
+
+            <article class="project-card" tabindex="0">
+              <img src="src/project3.jpg" alt="Weather app screenshot" loading="lazy">
+              <div class="project-title">Weather App</div>
+              <div class="project-meta">JS • REST API</div>
+              <div class="project-links">
+                <a href="https://sivasuriya2605.github.io/weather/" target="_blank">Live</a>
+                <a href="https://github.com/sivasuriya2605/weather" target="_blank">Code</a>
+              </div>
+            </article>
+
+          </div>
         </div>
-        <div id="CONTACT" class="section">
-                <br> <br> <br> <br>
-                <ul>
-                <li><img src="src/linkedin.png" alt="">LINKED IN : <a href="https://www.linkedin.com/in/sivasuriya2605/" target="_blank">sivasuriya2605</a></li><br> <br>
-                <li><img src="src/calllogo.png" alt="">MOBILE : <a href="TEL:+918610960440" >+91 86109 60440</a></li> <br> <br>
-                <li><img src="src/maillogo.png" alt="">E- MAIL :<a href="mailto:sivasuriya2605@gmail.com">sivasuriya2605@mail.com</a></li> <br> <br> <br>
-                    </ul>
-                <a href="src/suriya Resume (2).pdf" target="_blank"><button type="button" id="cv">RESUME</button></a> 
-        </div> 
-    </div>
+
+        
+        <div id="skills" class="fade-up">
+          <h3 style="margin-top:22px">Skills & Tools</h3>
+
+          <div class="section-row">
+            <div class="card">
+              <h3>Technical</h3>
+              <ul class="clean">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React (basics)</li>
+                <li>Responsive Layouts & Accessibility</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Soft Skills</h3>
+              <ul class="clean">
+                <li>Project Management</li>
+                <li>Time Management</li>
+                <li>Problem Solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="about" class="fade-up">
+          <h3 style="margin-top:22px">About</h3>
+
+          <div class="card">
+            <p>
+              Master's in Mathematics — strong analytical background.  
+              I enjoy building UI-focused projects and learning modern frontend patterns.
+            </p>
+          </div>
+
+          <div class="section-row">
+            <div class="card">
+              <h3>Education</h3>
+              <ul class="clean">
+                <li>MSc Mathematics — TBML College — 72%</li>
+                <li>BSc Mathematics — TBML College — 74%</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Experience</h3>
+              <ul class="clean">
+                <li>Customer Service — SUB-K Impact Solutions (1 yr 2 mo)</li>
+                <li>Receptionist — Geetan Residency & Mahal (Part-time)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+       
+        <div id="contact" class="fade-up">
+          <h3 style="margin-top:22px">Contact</h3>
+          <div class="card">
+            <p>
+              Contact me at  
+              <a href="mailto:sivasuriya2605@gmail.com">sivasuriya2605@mail.com</a>
+            </p>
+
+            <div style="margin-top:12px">
+              <a class="btn primary" href="mailto:sivasuriya2605@gmail.com">Email me</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="fade-up">
+          © <span id="year"></span> S. Suriya — Built with care
+        </footer>
+
+      </section>
     </main>
-<script src="script.js"></script>
-</body>
+  </div>
 
+  <script src="script.js"></script>
+</body>
 </html>
